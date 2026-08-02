@@ -5,21 +5,21 @@
 class Toolsniff < Formula
   desc "Discover installed developer and AI tools on macOS"
   homepage "https://github.com/pranvgarg/toolsniff"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/pranvgarg/toolsniff/releases/download/v0.1.1/toolsniff_0.1.1_darwin_amd64.tar.gz"
-    sha256 "60e54402d3a25a265fc8e043a340b02fc0bb3c65e5fe589e2aa1c4f30bec0deb"
+    url "https://github.com/pranvgarg/toolsniff/releases/download/v0.1.2/toolsniff_0.1.2_darwin_amd64.tar.gz"
+    sha256 "4c13b6b340d584662e65f8e31ad803b61e49eb5e3f8b5bf2b14b69332803363a"
 
     define_method(:install) do
       bin.install "toolsniff"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/pranvgarg/toolsniff/releases/download/v0.1.1/toolsniff_0.1.1_darwin_arm64.tar.gz"
-    sha256 "b0b761bb351d6a6e1c8cecf6a1f0cba7ed2401528dfa0a80360db36563edf6da"
+    url "https://github.com/pranvgarg/toolsniff/releases/download/v0.1.2/toolsniff_0.1.2_darwin_arm64.tar.gz"
+    sha256 "26a548af0207ce7b4c04849c8e645856a44715024e02bc059dfc4939554430a3"
 
     define_method(:install) do
       bin.install "toolsniff"
